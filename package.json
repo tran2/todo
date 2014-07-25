@@ -1,0 +1,19 @@
+{
+  "description": "todo",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "union": "0.3.5",
+    "flatiron": "0.3.11",
+    "plates": "0.4.x",
+    "node-static": "0.6.0",
+    "nano": "3.3.0"
+  },
+  "scripts": {
+    "test": "vows --spec",
+    "start": "node app.js"
+  },
+  "name": "todo",
+  "author": "Tran",
+  "homepage": ""
+}
