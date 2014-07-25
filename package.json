@@ -7,7 +7,9 @@
     "flatiron": "0.3.11",
     "plates": "0.4.x",
     "node-static": "0.6.0",
-    "nano": "3.3.0"
+    "nano": "3.3.0",
+    "flatware-cookie-parser": "0.1.x",
+    "flatware-session": "0.1.x"
   },
   "scripts": {
     "test": "vows --spec",

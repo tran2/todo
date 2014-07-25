@@ -9,6 +9,8 @@ var file = new nstatic.Server(__dirname + '/public/');
 
 app.use(flatiron.plugins.http, {
 	before: [
+		require('flatware-cookie-parser')(),
+		require('flatware-session')(),
 		function (req, res) {
 			var found = app.router.dispatch(req, res);
 			if(!found) {
@@ -19,5 +21,7 @@ app.use(flatiron.plugins.http, {
 });
 
 app.router.path('/users', require('./routes/users'));
+app.router.path('/session', require('./routes/session'));
+app.router.path('/todos', require('./routes/todos'));
 
 app.start(3000);
