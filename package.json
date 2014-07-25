@@ -11,8 +11,12 @@
     "flatware-cookie-parser": "0.1.x",
     "flatware-session": "0.1.x"
   },
+  "devDependencies": {
+      "mocha": "1.4.x",
+      "zombie": "1.4.x"
+  },
   "scripts": {
-    "test": "vows --spec",
+    "test": "mocha test/users.js",
     "start": "node app.js"
   },
   "name": "todo",

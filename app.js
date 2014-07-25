@@ -24,4 +24,11 @@ app.router.path('/users', require('./routes/users'));
 app.router.path('/session', require('./routes/session'));
 app.router.path('/todos', require('./routes/todos'));
 
-app.start(3000);
+module.exports = app;
+
+if (process.mainModule === module) {
+	app.start(3000);
+}
+
+
+
